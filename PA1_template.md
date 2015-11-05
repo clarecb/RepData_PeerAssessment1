@@ -54,7 +54,7 @@ HistSteps = ggplot(StepsPerDay, aes(x = steps)) + geom_histogram(color = "blue",
 print(HistSteps)
 ```
 
-![](./PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-5-1.png) 
 
 Finding the mean and median can give some more information about the distribution. In the calculation below, the mean and median are calculated with the missing values removed from the data.
 
@@ -85,7 +85,7 @@ IntervalSteps = ggplot(StepsPerInterval, aes(x=interval, y = steps, group = 1)) 
 print(IntervalSteps)
 ```
 
-![](./PA1_template_files/figure-html/unnamed-chunk-8-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-8-1.png) 
 
 This shows that there are average number of steps in different time intervals throughout the day. It may be useful to determine which time interval has the maximum average number of steps.
 
@@ -132,7 +132,7 @@ MeanNumberStepsNoNA = mean(StepsPerDayNoNA$steps)
 MedianNumberStepsNoNA = median(StepsPerDayNoNA$steps)
 ```
 
-![](./PA1_template_files/figure-html/unnamed-chunk-12-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-12-1.png) 
 
 The mean before imputation (9354.23) and the mean after imputation (10766.19) differ. The the median before (10395) and after (10766.19) imputation also differ. Both of these values are higher after imputation.
 
@@ -162,7 +162,7 @@ WeekdayIntervalSteps = ggplot(WeekdayStepsPerInterval, aes(x=interval, y = steps
 print(WeekdayIntervalSteps)
 ```
 
-![](./PA1_template_files/figure-html/unnamed-chunk-15-1.png) 
+![](PA1_template_files/figure-html/unnamed-chunk-15-1.png) 
 
 This graph shows that individuals seem to take more steps after waking up on the weekends, but that they make wake up (and get moving) later in the day.
 
